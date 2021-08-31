@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid example</title>
+    <style>
+        .container {
+            display: grid;
+            height: 100vh;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 0.2fr 1.3fr 1.2fr 0.6fr; 
+            grid-gap: 1%;
+            grid-template-areas:
+            ". header header header"
+            "sidebar main main main"
+            "sidebar content1 content2 content3"
+            "footer footer footer footer"
+        }
+        .header{
+            background-color: rgb(252, 167, 167);
+            grid-area: header;
+        }
+        .sidebar {
+            background-color: rgb(255, 212, 121);
+            grid-area: sidebar;
+        }
+        .main{
+            background-color: rgb(195, 255, 139);
+            grid-area: main;
+        }
+        .content1{
+            background-color: rgb(161, 255, 232);
+            grid-area: content1;
+        }
+        .content2{
+            background-color: rgb(151, 199, 255);
+            grid-area: content2;
+        }
+        .content3{
+            background-color: rgb(216, 149, 255);
+            grid-area: content3;
+        }
+        .footer{
+            background-color: rgb(255, 151, 229);
+            grid-area: footer;
+        }
+
+        .box-main{
+            display: grid;
+            grid-template-columns: repeat(3, [col] 1fr);
+            grid-template-rows: repeat(3, [row] auto);
+            grid-gap: 5px;
+            height: 100vh;
+        }
+        .a{
+            background-color: aqua;
+            grid-column: col / span 1;
+            grid-row: row;
+        }
+        .b{
+            background-color: rgb(46, 107, 107);
+            grid-column: col 2 / span 1;
+            grid-row: row;
+        }
+        .c{
+            background-color: rgb(0, 184, 184);
+            grid-column: col 3 / span 1;
+            grid-row: row;
+            
+        }
+        .d{
+            background-color: rgb(126, 146, 146);
+            grid-column: col / span 2;
+            grid-row: row 2;
+            
+        }
+        .e{
+            background-color: rgb(116, 173, 173);
+            grid-column: col 3 / span 1;
+            grid-row: row 2;
+            
+        }
+        .f{
+            background-color: rgb(8, 255, 214);
+            grid-column: col / span 1;
+            grid-row: row 3;
+            
+        }
+        .g{
+            background-color: rgb(52, 255, 187);
+            grid-column: col 2 / span 2;
+            grid-row: row 3;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Header</div>
+        <div class="sidebar">Sidebar</div>
+        <div class="main">Main</div>
+        <div class="content1">Content1</div>
+        <div class="content2">Content2</div>
+        <div class="content3">Content3</div>
+        <div class="footer">Footer</div>
+    </div>
+    <div class="box-main">
+        <div class="box a">box a</div>
+        <div class="box b">box b</div>
+        <div class="box c">box c</div>
+        <div class="box d">box d</div>
+        <div class="box e">box e</div>
+        <div class="box f">box f</div>
+        <div class="box g">box g</div>
+    </div>
+</body>
+</html>
