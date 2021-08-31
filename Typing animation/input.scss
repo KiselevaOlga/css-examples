@@ -1,7 +1,10 @@
 
-$bg-color: rgb(255, 245, 224);
-$title-color: rgb(82, 44, 0);
-$subtitle-color: rgb(105, 84, 26);
+$bg-color: rgb(0, 0, 0);
+$type-color: lightgrey;
+$title-color: 	#66FF66;
+$subtitle-color: white;
+
+
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
 
@@ -32,7 +35,7 @@ body{
             animation: typeAnimation 6s steps(23) 1s forwards;
         }
         &::after{
-            background: black;
+            background: $type-color;
             width: 1%;
             animation: typeAnimation 6s steps(23) 1s forwards,
             blink 700ms infinite;

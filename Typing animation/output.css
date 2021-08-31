@@ -2,14 +2,14 @@
 body {
   margin: 0;
   min-height: 100vh;
-  background: #fff5e0;
+  background: black;
   display: grid;
   place-content: center;
   text-align: center;
 }
 body h1 {
   font-family: "VT323", monospace;
-  color: #522c00;
+  color: #66FF66;
   font-size: clamp(1.5rem, 4vw + 1rem, 4rem);
   width: max-content;
   position: relative;
@@ -20,16 +20,16 @@ body h1::before, body h1::after {
   inset: 0;
 }
 body h1::before {
-  background: #fff5e0;
+  background: black;
   animation: typeAnimation 6s steps(23) 1s forwards;
 }
 body h1::after {
-  background: black;
+  background: lightgrey;
   width: 1%;
   animation: typeAnimation 6s steps(23) 1s forwards, blink 700ms infinite;
 }
 body p {
-  color: #69541a;
+  color: white;
   font-family: Open Sans, sans-serif;
   font-size: clamp(0.5rem, 2vw + 0.5rem, 2rem);
   opacity: 0;
