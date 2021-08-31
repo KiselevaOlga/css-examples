@@ -1,0 +1,131 @@
+$bg-color: beige;
+$title-color: black;
+$input-bg: lightgrey;
+$bg-form: rgba(71, 179, 179, 0.692);
+
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@500&display=swap');
+
+body{
+    display: grid;
+    place-content: center;
+    min-height: 95vh;
+    min-width: 99vw;
+    position: relative;
+    background: $bg-color;
+    
+    .slideUp {
+        .signup{
+            .form-title{
+                font-size: 16px;
+                span{
+                    display: inline !important;
+                }
+            }
+        }
+        .login{
+            top: 18% !important;
+            .form-title{
+                font-size: 24px !important;
+                span{
+                    display: none;
+                }
+            }
+            .form{
+                .input{
+                    visibility: visible;
+                }
+            }
+        }
+    }
+
+    .main-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        overflow: hidden;
+        font-family: 'Azeret Mono', monospace;
+        width: 310px;
+        height: 500px;
+        text-align: center;
+
+        .form {
+            .input{
+                background: $input-bg;
+                outline: none;
+                border: 0;
+                width: 60%;
+                height: 30px;
+                border-bottom: 1px solid grey;
+                padding-left: 10px;
+                transition: all 250ms ease-in-out;
+                &:hover{
+                    background: rgb(255, 255, 255);
+                }
+                &:first-child{
+                    border-top-left-radius: 15px;
+                    border-top-right-radius: 15px;
+                }
+                &:last-child{
+                    border-bottom: 0;
+                    border-bottom-right-radius: 15px;
+                    border-bottom-left-radius: 15px;
+                }
+            }
+        }
+
+        .signup{
+            background: $bg-form;
+            height: 500px;
+            padding-top: 50px;
+            transition: all 2s ease-out;
+            .form-title{
+                cursor: pointer; 
+                color: $title-color;
+                &:hover{
+                    color: rgb(94, 94, 94);
+                }
+                span{
+                    display:none;
+                }
+            }
+        }
+
+        .login {
+            background: white;
+            border-top-left-radius: 150px 30px;
+            border-top-right-radius: 150px 30px;
+            position: absolute;
+            top: 80%;
+            height: 500px;
+            transition: all 0.5s ease-out;
+            .form-title{
+                font-size: 18px;
+                cursor: pointer;
+                color: $title-color;
+                &:hover{
+                    color: rgb(94, 94, 94);
+                }
+            }
+            .input{
+                visibility: hidden;
+            }
+        }
+
+        .submit-btn{
+            background: rgb(6, 6, 82);
+            opacity: 0.5;
+            color: white;
+            width: 50%;
+            height: 35px;
+            margin: 10px;
+            border-radius: 15px;
+            cursor: pointer;
+            font-size: 17px;
+            transition: all 250ms ease-in;
+            &:hover{
+                opacity: 1;
+            }
+        }
+    }
+}

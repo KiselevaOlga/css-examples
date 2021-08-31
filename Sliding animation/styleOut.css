@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@500&display=swap");
+body {
+  display: grid;
+  place-content: center;
+  min-height: 95vh;
+  min-width: 99vw;
+  position: relative;
+  background: beige;
+}
+body .slideUp .signup .form-title {
+  font-size: 16px;
+}
+body .slideUp .signup .form-title span {
+  display: inline !important;
+}
+body .slideUp .login {
+  top: 18% !important;
+}
+body .slideUp .login .form-title {
+  font-size: 24px !important;
+}
+body .slideUp .login .form-title span {
+  display: none;
+}
+body .slideUp .login .form .input {
+  visibility: visible;
+}
+body .main-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  font-family: "Azeret Mono", monospace;
+  width: 310px;
+  height: 500px;
+  text-align: center;
+}
+body .main-form .form .input {
+  background: lightgrey;
+  outline: none;
+  border: 0;
+  width: 60%;
+  height: 30px;
+  border-bottom: 1px solid grey;
+  padding-left: 10px;
+  transition: all 250ms ease-in-out;
+}
+body .main-form .form .input:hover {
+  background: white;
+}
+body .main-form .form .input:first-child {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+body .main-form .form .input:last-child {
+  border-bottom: 0;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+body .main-form .signup {
+  background: rgba(71, 179, 179, 0.692);
+  height: 500px;
+  padding-top: 50px;
+  transition: all 2s ease-out;
+}
+body .main-form .signup .form-title {
+  cursor: pointer;
+  color: black;
+}
+body .main-form .signup .form-title:hover {
+  color: #5e5e5e;
+}
+body .main-form .signup .form-title span {
+  display: none;
+}
+body .main-form .login {
+  background: white;
+  border-top-left-radius: 150px 30px;
+  border-top-right-radius: 150px 30px;
+  position: absolute;
+  top: 80%;
+  height: 500px;
+  transition: all 0.5s ease-out;
+}
+body .main-form .login .form-title {
+  font-size: 18px;
+  cursor: pointer;
+  color: black;
+}
+body .main-form .login .form-title:hover {
+  color: #5e5e5e;
+}
+body .main-form .login .input {
+  visibility: hidden;
+}
+body .main-form .submit-btn {
+  background: #060652;
+  opacity: 0.5;
+  color: white;
+  width: 50%;
+  height: 35px;
+  margin: 10px;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 17px;
+  transition: all 250ms ease-in;
+}
+body .main-form .submit-btn:hover {
+  opacity: 1;
+}
+
+/*# sourceMappingURL=styleOut.css.map */
