@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background: rgb(233, 233, 233);
+        width: 200px;
+        height: 200px;
+    }
+    #modalDiv{
+        color: white;
+        width: 350px;
+        height: 100px;
+        text-align: center;
+        opacity: 0;
+        visibility: hidden;
+        position: fixed;
+        inset: 0;
+        margin: auto;
+        border-radius: 10px 100px / 120px;
+        transition: all 150ms linear;
+    }
+    @keyframes bg-modal-animation{
+        0%{background-position: left}
+        50%{background-position: right}
+        100%{background-position: left}
+    }
+    #modalDiv:target{
+        opacity: 1;
+        visibility: visible;
+        background: blue;
+        background-image: linear-gradient(45deg, blue 0%, red 51%);
+        background-blend-mode: multiply;
+        background-size: 150%;
+        animation: bg-modal-animation 5s infinite;
+    }
+    
+</style>
+<body>
+    <a href="#modalDiv">
+        <div class="myDiv" >hoi</div>
+    </a>
+    <div id="modalDiv">
+        <a href="#!"><p>Close</p></a>
+        oqg
+    </div>
+</body>
+<script>
+    
+</script>
+</html>
